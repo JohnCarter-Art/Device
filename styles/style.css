@@ -30,6 +30,7 @@
 
 :root {
     --main-color: #000000;
+    --footer-color: #FFFFFF;
   }
 
 
@@ -42,13 +43,7 @@
     box-sizing: border-box;
 }
 
-html {
-    height: 100%;
-}
-
 body {
-    display: block;
-    position: relative;
     margin: 0 auto;
     font-family: 'Rubik', sans-serif;
     font-style: normal;
@@ -114,6 +109,7 @@ body {
 /*Убираем подчеркивание с ссылок*/
 .underline-remove {
     text-decoration: none;
+    color: var(--main-color);
 }
 
 
@@ -131,17 +127,20 @@ body {
     font-weight: 800;
     font-size: 50px;
     line-height: 50px;
+    color: var(--main-color);
 }
 
 .text {
     font-size: 18px;
     line-height: 30px;
+    color: var(--main-color);
 }
 
 .link {
     font-size: 18px;
     line-height: 30px;
     text-decoration: none;
+    color: var(--main-color);
 }
 
 .title-subtitle {
@@ -151,12 +150,14 @@ body {
     line-height: 21px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+    color: var(--main-color);
 }
 
 .title-caption {
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
+    color: var(--main-color);
 }
 
 .text-bold {
@@ -164,21 +165,25 @@ body {
     font-size: 18px;
     line-height: 20px;
     letter-spacing: -0.02em;
+    color: var(--main-color);
 }
 
 .text-small {
     font-size: 14px;
     line-height: 20px;
+    color: var(--main-color);
 }
 
 .text-small-desc {
     font-size: 16px;
     line-height: 20px;
+    color: var(--main-color);
 }
 
 .des-term {
     font-size: 36px;
     line-height: 30px;
+    color: var(--main-color);
 }
 
 .des-definition {
@@ -194,6 +199,7 @@ body {
     font-size: 18px;
     line-height: 24px;
     letter-spacing: -0.02em;
+    color: var(--main-color);
 }
 
 .interactive-button {
@@ -204,6 +210,7 @@ body {
     text-align: center;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+    color: var(--main-color);
 }
 
 .delivery-text {
@@ -214,16 +221,19 @@ body {
     text-align: center;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+    color: var(--main-color);
 }
 
 .catalog-item {
     font-size: 16px;
     line-height: 18px;
+    color: var(--main-color);
 }
 
 .subtitle-item {
     font-size: 16px;
     line-height: 19px;
+    color: var(--main-color);
 }
 
 .filter-item {
@@ -233,11 +243,13 @@ body {
     line-height: 19px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+    color: var(--main-color);
 }
 
 .filter-text {
     font-size: 16px;
     line-height: 19px;
+    color: var(--main-color);
 }
 
 .price {
@@ -246,6 +258,9 @@ body {
     color: #444444;
 }
 
+.footer-col-1-descrition {
+    color: var(--footer-color);
+}
 
 /*(NAV)Навигационная панель*/
 
@@ -254,6 +269,7 @@ body {
 .container-header {
     margin-top: 40px;
     height: 300px;
+    width: 100%;
     background: #FFE17F;
 }
 
@@ -261,6 +277,7 @@ body {
 .container-header-catalog {
     margin-top: 40px;
     height: 186px;
+    width: 100%;
     background: #FFE17F;
 }
 
@@ -269,36 +286,93 @@ body {
     padding: 0 60px;
 }
 
+/*Выравнивнивание ЛОГО*/
 .logo {
     width: 145px;
     height: 36px;
     margin-top: -25px;
 }
 
-/*Выравнивние по блоку*/
-
 .header-search {
     display: flex;
     justify-content: space-between;
-
+    align-items: center;
     margin-top: 30px;
 }
 
 .header-search__left {
     display: flex;
-}
 
+}
 .header-search__right {
     display: flex;
+    gap: 36px;
 }
 
-.form-search {
-    margin-right: 80px;
+/*Стилизация Шапки*/
+
+.login {
+    display: flex;
+    width: 231px;
+    gap: 12px;
 }
 
-.compare-link {
-    margin-right: 60px;
+.login-icon {
+    width: 14px;
+    background: url("../src/images/people.svg") no-repeat 0px;
 }
+
+.compare {
+    display: flex;
+    gap: 12px;
+}
+
+.compare-icon {
+    width: 14px;
+    background: url("../src/images/compare.svg") no-repeat 0px;
+}
+
+.cart {
+    display: flex;
+    gap: 12px;
+}
+
+.cart-icon {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.cart-icon-ellipse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 21px;
+    height: 21px;
+    border: #FFFFFF;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    z-index: 5;
+}
+
+.cart-icon-number {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.cart-icon-cart {
+    width: 16px;
+    height: 15px;
+    margin-left: -5px;
+    background: url("../src/images/cart.svg") no-repeat 0px;
+}
+
+/*Выравнивние по блоку*/
+
+
 
 .catalog-title {
     display: flex;
@@ -531,7 +605,7 @@ body {
     height: 160px;
     background-color: #FFE17F;
     background-repeat: no-repeat;
-    background-position: 50%;
+    background-position: center;
 }
 
 /*Привязка иконок к списку*/
@@ -541,6 +615,7 @@ body {
 }
 .category-item-monopod {
     background-image: url("../src/images/monopod.svg");
+    background-position: bottom;
 }
 .category-item-action {
     background-image: url("../src/images/action_cam.svg");

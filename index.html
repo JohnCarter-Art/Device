@@ -13,8 +13,8 @@
     <header>
 
       <!--НАВИГАЦИОННАЯ ПАНЕЛЬ-->
-      <nav class="container container-header">
-        <div class="nav-section">
+      <nav class="container-header">
+        <div class="nav-section container">
 
           <!--ЛОГОТИП-->
           <a class="underline-remove">
@@ -28,15 +28,23 @@
                 <input name="search-text" type="search" placeholder="Поиск по сайту">
                 <input id="search" name="search" type="submit" value="Найти">
               </form>
-              <a class="underline-remove login text" href="#">
-                <span>Войти</span>
-              </a>
             </div>
+            <a class="underline-remove text login" href="#">
+              <span class="login-icon"></span>
+              <span>Войти</span>
+            </a>
             <div class="buttons text header-search__right">
-              <a class="underline-remove compare-link" href="#">
+              <a class="underline-remove compare" href="#">
+                <span class="compare-icon"></span>
                 <span>Сравнить</span>
               </a>
-              <a class="underline-remove whitelist-link" href="#">
+              <a class="underline-remove cart" href="#">
+                <span class="cart-icon">
+                  <span class="cart-icon-ellipse">
+                    <span class="cart-icon-number">2</span>
+                  </span>
+                  <span class="cart-icon-cart"></span>
+                </span>
                 <span>Корзина</span>
               </a>
             </div>
@@ -259,32 +267,33 @@
           <p class="delivery-text">Доставим редкий товар под заказ</p>
           <span class="delivery-img-info"></span>
         </section>
-          <!--МОДАЛЬНОЕ ОКНО ДОСТАВКИ-->
-          <section class="delivery-modal">
-            <form>
-              <h2 class="main-title">Доставка под заказ</h2>
-              <span>
-                <label for="login" class="text-bold">Ваше имя:</label>
-                <input type="text" name="login" id="login" placeholder="Введите имя" class="text-small-desc">
-              </span>
-              <span>
-                <label for="e-mail" class="text-bold">Ваш e-mail:</label>
-                <input type="email" name="e-mail" id="e-mail" placeholder="Ваш e-mail" class="text-small-desc">
-              </span>
-              <span>
-                <label for="product" class="text-bold">Что нужно привезти:</label>
-                <input type="text" name="product" id="product" placeholder="В свободной форме" class="text-small-desc">
-              </span>
-              <span>
-                <label for="amount" class="text-bold">Количество:</label>
-                <input type="number" name="amount" id="amount" value="1">
-              </span>
-              <span>
-                <label for="delivery-submit" class="interactive-button">Отправить</label>
-                <input type="submit" name="delivery-submit" id="delivery-submit" class="interactive-button">
-              </span>
-            </form>
-          </section>
+
+        <!--МОДАЛЬНОЕ ОКНО ДОСТАВКИ-->
+        <section class="delivery-modal">
+          <form>
+            <h2 class="main-title">Доставка под заказ</h2>
+            <span>
+              <label for="name" class="text-bold">Ваше имя:</label>
+              <input type="text" name="name" id="name" placeholder="Введите имя" class="text-small-desc">
+            </span>
+            <span>
+              <label for="e-mail" class="text-bold">Ваш e-mail:</label>
+              <input type="email" name="e-mail" id="e-mail" placeholder="Ваш e-mail" class="text-small-desc">
+            </span>
+            <span>
+              <label for="product" class="text-bold">Что нужно привезти:</label>
+              <input type="text" name="product" id="product" placeholder="В свободной форме" class="text-small-desc">
+            </span>
+            <span>
+              <label for="amount" class="text-bold">Количество:</label>
+              <input type="number" name="amount" id="amount" value="1">
+            </span>
+            <span>
+              <label for="delivery-submit" class="interactive-button">Отправить</label>
+              <input type="submit" name="delivery-submit" id="delivery-submit" class="interactive-button">
+            </span>
+          </form>
+        </section>
 
 
         <section class="about">
@@ -318,6 +327,7 @@
             <a class="underline-remove interactive-button" href="#">Напишите нам</a>
           </div>
         </section>
+
         <section class="mailing-list">
           <div class="mailing-item">
             <h2 class="main-title">Подпишитесь на рассылку</h2>
@@ -335,10 +345,10 @@
             <p class="text">Это бесплатно</p>
           </div>
         </section>
-      </div>
+
     </main>
 
-
+    <!--Подвал-->
     <footer class="footer">
       <div class="container footer-column">
         <div class="footer-col-1">
@@ -358,23 +368,24 @@
           </div>
           <ul class="social-networks-list">
             <li class="social-networks-item">
-              <a class="underline-remove icon" href="#">Telegram</a>
+              <a class="underline-remove icon" href="https://t.me/htmlacademy">Telegram</a>
             </li>
             <li class="social-networks-item">
-              <a class="underline-remove icon" href="#">Youtube</a>
+              <a class="underline-remove icon" href="https://www.youtube.com/user/htmlacademyru">Youtube</a>
             </li>
             <li class="social-networks-item">
-              <a class="underline-remove icon" href="#">Twitter</a>
+              <a class="underline-remove icon" href="https://twitter.com/htmlacademy_ru">Twitter</a>
             </li>
           </ul>
         </div>
         <div class="footer-col-3">
-          <a class="underline-remove link-small-2" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <a class="underline-remove link" href="tel:+78128121212">+7 (812) 812-12-12</a>
           <a class="underline-remove" href="https://htmlacademy.ru/">
             <img src="src/images/html_academy.svg" alt="html academy">
           </a>
         </div>
     </div>
     </footer>
+
   </body>
 </html>
