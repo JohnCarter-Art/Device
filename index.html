@@ -23,17 +23,19 @@
 
           <!--СТРОКА ПОИСКА, КНОПКА ВХОДА, КОРЗИНА, СРАВНИТЬ-->
           <section class="header-search">
-            <div class="input-search text-small-desc header-search__left">
+            <div class="text-small-desc header-search__left">
               <form class="form-search" action="https://echo.htmlacademy.ru">
-                <input name="search-text" type="search" placeholder="Поиск по сайту">
-                <input id="search" name="search" type="submit" value="Найти">
+                <input class="search-text-area text-small-desc" id="search-textarea" name="search-text" type="search" placeholder="Текст поиска">
+                <button class="search-button" id="search" name="search" type="submit" value="Найти">Найти</button>
               </form>
             </div>
+
             <a class="underline-remove text login" href="#">
               <span class="login-icon"></span>
               <span>Войти</span>
             </a>
-            <div class="buttons text header-search__right">
+
+            <div class="text header-search__right">
               <a class="underline-remove compare" href="#">
                 <span class="compare-icon"></span>
                 <span>Сравнить</span>
@@ -53,26 +55,28 @@
           <!--РАСКРЫВАЮЩИЙСЯ СПИСОК-->
           <section class="main-menu">
             <div class="catalog">
-              <a class="underline-remove title-subtitle catalog-title" href="catalog.html">
-                <span>Каталог товаров</span>
-                <img src="./src/images/plus.svg">
+              <a class="underline-remove title-subtitle catalog-pop" href="catalog.html">
+                <span class="catalog-main">Каталог товаров</span>
               </a>
-              <ul class="catalog-list">
-                <li class="catalog-item"><a class="underline-remove" href="#">Виртуальная реальность</a></li>
-                <li class="catalog-item"><a class="underline-remove" href="#">Моноподы для селфи</a></li>
-                <li class="catalog-item"><a class="underline-remove" href="#">Экшн-камеры</a></li>
-                <li class="catalog-item"><a class="underline-remove" href="#">Фитнес-браслеты</a></li>
-                <li class="catalog-item"><a class="underline-remove" href="#">Умные часы</a></li>
-                <li class="catalog-item"><a class="underline-remove" href="#">Квадрокоптеры</a></li>
-              </ul>
             </div>
 
+
             <div class="main-menu-list">
-              <a class="underline-remove menu-delivery title-subtitle" href="#">Доставка</a>
-              <a class="underline-remove menu-warranty title-subtitle" href="#">Гаранитии</a>
-              <a class="underline-remove menu-contact title-subtitle" href="#">Контакты</a>
+              <a class="underline-remove title-subtitle" href="#">Доставка</a>
+              <a class="underline-remove title-subtitle" href="#">Гаранитии</a>
+              <a class="underline-remove title-subtitle" href="#">Контакты</a>
             </div>
           </section>
+          <div class="pop-list-catalog">
+            <ul class="catalog-list">
+              <li class="catalog-item-1"><a class="underline-remove" href="#">Виртуальная реальность</a></li>
+              <li class="catalog-item-2"><a class="underline-remove" href="#">Моноподы для селфи</a></li>
+              <li class="catalog-item-3"><a class="underline-remove" href="#">Экшн-камеры</a></li>
+              <li class="catalog-item-4"><a class="underline-remove" href="#">Фитнес-браслеты</a></li>
+              <li class="catalog-item-5"><a class="underline-remove" href="#">Умные часы</a></li>
+              <li class="catalog-item-6"><a class="underline-remove" href="#">Квадрокоптеры</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
