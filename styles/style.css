@@ -70,6 +70,11 @@ body {
 
 .terms-list {
     list-style: none;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
 }
 
 .partner-item::marker {
@@ -474,7 +479,7 @@ input.search-text-area::placeholder {color: var(--main-color);}
     padding: 0px;
 
     height: 180px;
-    width: 100%;
+    width: 1160px;
 
     background-color: var(--bg-head-colog);
 }
@@ -524,7 +529,7 @@ input.search-text-area::placeholder {color: var(--main-color);}
 .slider-block {
     display: grid;
     grid-template-columns: 600px 560px;
-    grid-template-rows: 560px;
+    grid-template-rows: 400px;
 }
 
 /*ЛЕВЫЙ БЛОК*/
@@ -591,11 +596,11 @@ input.search-text-area::placeholder {color: var(--main-color);}
 
     background-color: var(--bg-head-colog);
     background-repeat: no-repeat;
-    background-size: 220px 8px;
 
     grid-column: 1 / 2;
     grid-row: 2 / 3;
 
+    width: 210px;
     height: 8px;
 }
 
@@ -712,72 +717,119 @@ input.search-text-area::placeholder {color: var(--main-color);}
 /*Категории товаров*/
 
 .category {
-    margin-top: -70px;
+    margin-top: 70px;
 }
 
 .category-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: auto;
+    gap: 40px;
 }
 
 .category-item {
     display: flex;
+
     width: 160px;
     height: 160px;
+
     background-color: var(--bg-head-colog);
     background-repeat: no-repeat;
     background-position: center;
+
+    grid-row: 1 / 2;
 }
 
 /*Привязка иконок к списку*/
 
 .category-item-virtual {
+    grid-column: 1 / 2;
+
     background-image: url("../src/images/virtual.svg");
 }
 .category-item-monopod {
+    grid-column: 2 / 3;
+
     background-image: url("../src/images/monopod.svg");
     background-position: bottom;
 }
 .category-item-action {
+    grid-column: 3 / 4;
+
     background-image: url("../src/images/action_cam.svg");
 }
 .category-item-fitnes {
+    grid-column: 4 / 5;
+
     background-image: url("../src/images/fitnes.svg");
 }
 .category-item-clock {
+    grid-column: 5 / 6;
+
     background-image: url("../src/images/smart_clock.svg");
 }
 .category-item-quadro {
+    grid-column: 6 / 7;
+
     background-image:  url("../src/images/quadrocopter.svg");
 }
+
 .category-item-description {
     padding-top: 193px;
 }
 
-.terms {
-    margin-top: 70px;
-}
-
-
-
 /*Доставка, гарантии, кредит*/
 .terms {
-    margin-top: 70px;
+    margin-top: 163px;
+
     display: flex;
-    height: 391px;
 }
 
 .terms-list-title {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+    padding-top: 64px;
+
+    list-style: none;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 64px;
 }
 
+.terms-item-bg {
+    background: var(--bg-head-colog) no-repeat;
+    background-size: 0.2em;
+    background-position: center center;
+}
+
+.terms-item-title-sub {
+    background-color: var(--bg-head-colog);
+    background-repeat: no-repeat;
+    width: 210px;
+    height: 8px;
+}
 
 .terms-list{
     margin-left: 116px;
+}
+
+.terms-decor-line {
+    width: 7px;
+    height: 319px;
+
+    background-color: var(--main-color);
+    background-repeat: no-repeat;
+    background-size: 7px 319px;
 }
 
 .terms-item {

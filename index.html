@@ -22,7 +22,7 @@
           </a>
 
           <!--СТРОКА ПОИСКА, КНОПКА ВХОДА, КОРЗИНА, СРАВНИТЬ-->
-          <section class="header-search">
+          <div class="header-search">
             <div class="text-small-desc header-search__left">
               <form class="form-search" action="https://echo.htmlacademy.ru">
                 <input class="search-text-area text-small-desc" id="search-textarea" name="search-text" type="search" placeholder="Текст поиска">
@@ -50,10 +50,10 @@
                 <span>Корзина</span>
               </a>
             </div>
-          </section>
+          </div>
 
           <!--РАСКРЫВАЮЩИЙСЯ СПИСОК-->
-          <section class="main-menu">
+          <div class="main-menu">
             <div class="catalog">
               <a class="underline-remove title-subtitle catalog-pop" href="catalog.html">
                 <span class="catalog-main">Каталог товаров</span>
@@ -66,7 +66,7 @@
               <a class="underline-remove title-subtitle" href="#">Гаранитии</a>
               <a class="underline-remove title-subtitle" href="#">Контакты</a>
             </div>
-          </section>
+          </div>
           <div class="pop-list-catalog">
             <ul class="catalog-list">
               <li class="catalog-item-1"><a class="underline-remove" href="#">Виртуальная реальность</a></li>
@@ -85,7 +85,7 @@
     <main class="container">
 
         <!--СЛАЙДЕР-->
-        <section class="advertising">
+        <div class="advertising">
 
 
           <!--Сетка под блоки-->
@@ -105,7 +105,7 @@
               </div>
 
               <!--Изображение товара в данном слайде-->
-              <p class="slider-image slider-image-1" width="560" height="560">
+              <p class="slider-image slider-image-1">
 
               <!--Номер слайдера-->
               <p class="slider-number">01</p>
@@ -151,7 +151,7 @@
 
                 <!--СЛАЙДЕР №2-->
                 <li class="slider-item">
-                  <p class="slider-image slider-image-2" width="560" height="560">
+                  <p class="slider-image slider-image-2">
 
                   <div>
                     <b class="slider-spec-main main-title">Худеем правильно!</b>
@@ -174,7 +174,7 @@
                 <!--СЛАЙДЕР №3-->
                 <li class="slider-item">
 
-                  <p class="slider-image slider-image-3" width="560" height="560">
+                  <p class="slider-image slider-image-3">
 
                   <div>
                     <p class="slider-spec-main main-title">Делай селфи, как Бен Стиллер! </p>
@@ -205,31 +205,48 @@
             </ul>
 
           </div>
-        </section>
+        </div>
 
 
         <!--БЛОК КАТЕГОРИИ-->
-        <section class="category">
+        <div class="category">
           <ul class="category-list">
-            <li class="category-item category-item-virtual"><a class="underline-remove category-item-description" href="#">Виртуальная реальность</a></li>
-            <li class="category-item category-item-monopod"><a class="underline-remove category-item-description" href="#">Монопод для селфи</a></li>
-            <li class="category-item category-item-action"><a class="underline-remove category-item-description" href="#">Экшн-камеры</a></li>
-            <li class="category-item category-item-fitnes"><a class="underline-remove category-item-description" href="#">Фитнес-браслеты</a></li>
-            <li class="category-item category-item-clock"><a class="underline-remove category-item-description" href="#">Умные часы</a></li>
-            <li class="category-item category-item-quadro"><a class="underline-remove category-item-description" href="#">Квадрокоптеры</a></li>
+            <li class="category-item category-item-virtual">
+              <a class="underline-remove category-item-description" href="#">Виртуальная реальность</a>
+            </li>
+            <li class="category-item category-item-monopod">
+              <a class="underline-remove category-item-description" href="#">Монопод для селфи</a>
+            </li>
+            <li class="category-item category-item-action">
+              <a class="underline-remove category-item-description" href="#">Экшн-камеры</a>
+            </li>
+            <li class="category-item category-item-fitnes">
+              <a class="underline-remove category-item-description" href="#">Фитнес-браслеты</a>
+            </li>
+            <li class="category-item category-item-clock">
+              <a class="underline-remove category-item-description" href="#">Умные часы</a>
+            </li>
+            <li class="category-item category-item-quadro">
+              <a class="underline-remove category-item-description" href="#">Квадрокоптеры</a>
+            </li>
           </ul>
-        </section>
+        </div>
 
         <!--УСЛОВИЯ Доставки, Гараний, Кредита-->
         <section class="terms">
           <ul class="terms-list-title">
-            <li class="interactive-button terms-item-title-sub"><a class="underline-remove" href="#"><h3>Доставка</h3></a></li>
-            <li class="interactive-button terms-item-title-sub"><a class="underline-remove" href="#"><h3>Гаранития</h3></a></li>
-            <li class="interactive-button terms-item-title-sub"><a class="underline-remove" href="#"><h3>Кредит</h3></a></li>
+            <li class="interactive-button"><a class="underline-remove terms-item-title-sub" href="#"><h3>Доставка</h3></a></li>
+            <li class="interactive-button terms-item-bg"><a class="underline-remove terms-item-title-sub" href="#"><h3>Гаранития</h3></a></li>
+            <li class="interactive-button terms-item-bg"><a class="underline-remove terms-item-title-sub" href="#"><h3>Кредит</h3></a></li>
           </ul>
 
-          <!--УСЛОВИЯ Доставки-->
+          <!--Декоративная линия-->
+          <span class="terms-decor-line"></span>
+
+          <!--УСЛОВИЯ-->
           <ul class="terms-list">
+
+            <!--УСЛОВИЯ Доставки-->
             <li class="terms-item">
               <div>
                 <h2 class="main-title">Доставка</h2>
@@ -266,11 +283,11 @@
 
 
         <!--ОТДЕЛ ОФОРМЛЕНИЯ И ИНОФРМАЦИИ ПО ДОСТАВКЕ-->
-        <section class="delivery-info">
+        <div class="delivery-info">
           <span class="delivery-img-car"></span>
           <p class="delivery-text">Доставим редкий товар под заказ</p>
           <span class="delivery-img-info"></span>
-        </section>
+        </div>
 
         <!--МОДАЛЬНОЕ ОКНО ДОСТАВКИ-->
         <section class="delivery-modal">
