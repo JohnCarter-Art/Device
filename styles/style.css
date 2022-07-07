@@ -30,8 +30,10 @@
 
 :root {
     --main-color: #000000;
-    --footer-color: #FFFFFF;
-    --bg-head-colog: #FFE17F;
+    --white-color: #FFFFFF;
+    --yellow-light: #FFE17F;
+    --dark-color: #444444;
+    --light: #F0F0F0;
   }
 
 
@@ -54,7 +56,16 @@ body {
 
 
 /*Убираем стиль списка*/
-.catalog-list {
+.catalog-list,
+.category-list,
+.terms-list,
+.subtitle-list,
+.thumb-list,
+.slider-block-right,
+.widget-page-list,
+.social-networks-list,
+.terms-title-list,
+.delivery-text {
     list-style: none;
     margin-block-start: 0em;
     margin-block-end: 0em;
@@ -63,58 +74,8 @@ body {
     padding-inline-start: 0px;
 }
 
-.category-list {
-
-    list-style: none;
-}
-
-.terms-list {
-    list-style: none;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 0px;
-}
-
 .partner-item::marker {
     color: #FFC700;
-}
-
-.subtitle-list {
-    list-style: none;
-}
-
-.thumb-list {
-    list-style: none;
-}
-
-.slider-block-right {
-    list-style: none;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 0px;
-}
-
-
-.widget-page-list {
-    list-style: none;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 0px;
-}
-
-.social-networks-list {
-    list-style: none;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 0px;
 }
 
 /*Убираем подчеркивание с ссылок*/
@@ -134,6 +95,9 @@ body {
 /*Текстовые стили*/
 
 .main-title {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 50px;
@@ -142,9 +106,12 @@ body {
 }
 
 .text {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+
     font-size: 18px;
     line-height: 30px;
-    color: var(--main-color);
+    color: var(--dark-color);
 }
 
 .link {
@@ -201,7 +168,7 @@ body {
     font-size: 16px;
     line-height: 30px;
     margin-inline-start: 0px;
-    color: #444444;
+    color: var(--dark-color);
 }
 
 .category-item-description {
@@ -266,7 +233,7 @@ body {
 .price {
     font-size: 18px;
     line-height: 21px;
-    color: #444444;
+    color: var(--dark-color);
 }
 
 .footer-col-1-descrition {
@@ -283,7 +250,7 @@ body {
     height: 300px;
     width: 100%;
 
-    background: var(--bg-head-colog);
+    background: var(--yellow-light);
 }
 
 /*Задний фон каталог*/
@@ -293,7 +260,7 @@ body {
     height: 186px;
     width: 100%;
 
-    background: var(--bg-head-colog);
+    background: var(--yellow-light);
 }
 
 /*Отступы слева и справа для панели навигации*/
@@ -354,7 +321,7 @@ body {
     background-image: url("../src/images/search.svg");
     background-position: bottom 10px left 16px ;
     background-repeat: no-repeat;
-    background-color: var(--bg-head-colog);
+    background-color: var(--yellow-light);
 }
 
 input.search-text-area::placeholder {color: var(--main-color);}
@@ -367,13 +334,17 @@ input.search-text-area::placeholder {color: var(--main-color);}
 
     border: 2px solid #000000;
     border-radius: 0px 50px 50px 0px;
-    background-color: var(--bg-head-colog);
+    background-color: var(--yellow-light);
 }
 
 .login {
     display: flex;
+
     width: 231px;
+
     gap: 12px;
+
+    color: var(--main-color);
 }
 
 .login-icon {
@@ -481,7 +452,7 @@ input.search-text-area::placeholder {color: var(--main-color);}
     height: 180px;
     width: 1160px;
 
-    background-color: var(--bg-head-colog);
+    background-color: var(--yellow-light);
 }
 
 .catalog-list {
@@ -560,7 +531,7 @@ input.search-text-area::placeholder {color: var(--main-color);}
     font-weight: 700;
     font-size: 180px;
     line-height: 30px;
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
 /*ПРАВЫЙ БЛОК*/
@@ -594,7 +565,7 @@ input.search-text-area::placeholder {color: var(--main-color);}
     justify-content: center;
     align-self: center;
 
-    background-color: var(--bg-head-colog);
+    background-color: var(--yellow-light);
     background-repeat: no-repeat;
 
     grid-column: 1 / 2;
@@ -624,11 +595,11 @@ input.search-text-area::placeholder {color: var(--main-color);}
     border: 2px solid #000000;
     border-radius: 50%;
 
-    background-color: #FFFFFF;
+    background-color: var(--white-color);
 }
 
 .ellipse:nth-child(1) {
-    background-color: #000000;
+    background-color: var(--main-color);
 }
 
 .slider-characteristics {
@@ -678,7 +649,7 @@ input.search-text-area::placeholder {color: var(--main-color);}
     height: 60px;
     background-repeat: no-repeat;
     border: 0px;
-    background-color: white;
+    background-color: var(--white-color);
 }
 
 /*Кнопка назад(влево)*/
@@ -721,12 +692,6 @@ input.search-text-area::placeholder {color: var(--main-color);}
 }
 
 .category-list {
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 0px;
-
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
     grid-template-rows: auto;
@@ -739,7 +704,7 @@ input.search-text-area::placeholder {color: var(--main-color);}
     width: 160px;
     height: 160px;
 
-    background-color: var(--bg-head-colog);
+    background-color: var(--yellow-light);
     background-repeat: no-repeat;
     background-position: center;
 
@@ -789,38 +754,58 @@ input.search-text-area::placeholder {color: var(--main-color);}
     margin-top: 163px;
 
     display: flex;
+
+    gap: 116px;
 }
 
-.terms-list-title {
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 0px;
-    padding-top: 64px;
+.terms-right-block {
+    display: flex;
+}
 
-    list-style: none;
+.terms-title-list {
+    padding: 65px 0px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 35px;
 }
 
-.terms-item-bg {
-    background: var(--bg-head-colog) no-repeat;
-    background-size: 0.2em;
-    background-position: center center;
+.terms-item-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 280px;
+    height: 40px;
 }
 
 .terms-item-title-sub {
-    background-color: var(--bg-head-colog);
-    background-repeat: no-repeat;
-    width: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 160px;
     height: 8px;
+
+    background-color: var(--yellow-light);
+    background-position: center center;
 }
 
+.terms-text-decor {
+    color: var(--yellow-light);
+    background-color: var(--main-color);
+}
+
+.terms-item-title:nth-child(1) {
+    display: flex;
+
+    background-color: var(--main-color);
+}
+
+
 .terms-list{
-    margin-left: 116px;
+    display: flex;
 }
 
 .terms-decor-line {
@@ -833,28 +818,79 @@ input.search-text-area::placeholder {color: var(--main-color);}
 }
 
 .terms-item {
-    padding-top: 72px;
     display: flex;
-    align-items: center;
+
+    width: 694px;
+
+    gap: 110px;
+}
+
+.terms-item-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 34px;
+}
+
+.terms-item-descrip {
+    width: 448px;
+}
+
+.terms-image {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    background: url("../src/images/run_man.svg") no-repeat;
+    background-position: center;
 }
 
 .terms-item:nth-child(2), .terms-item:nth-child(3) {
     display: none;
 }
 
+.terms-background {
+    margin-top: -218px;
+
+    width: 100%;
+    height: 289px;
+
+    background: var(--light);
+
+    position:absolute;
+    z-index: -1;
+}
+
 /*Блок с доставкой и модальным окном*/
 .delivery-info {
-    margin-top: 70px;
-    width: 1160px;
-    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 142px;
+
+    height: 100%;
 }
 
 .delivery-img-car {
     width: 125px;
     height: 100px;
+
     background-repeat: no-repeat;
     background-image: url("../src/images/big_car.svg");
-    background-color: #000000;
+    background-position: center center;
+    background-color: var(--yellow-light);
+}
+
+.delivery-img-info {
+    width: 125px;
+    height: 100px;
+
+    background-repeat: no-repeat;
+    background-image: url("../src/images/");
+    background-position: center center;
 }
 
 /*MODAL DELIVERY*/
@@ -983,9 +1019,6 @@ th:first-child {
 }
 
 .thumb-list {
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    padding-inline-start: 0px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -1048,7 +1081,7 @@ th:first-child {
 .footer {
     display: flex;
     flex-direction: row;
-    background: #444444;
+    background: var(--dark-color);
     height: 321px;
 }
 

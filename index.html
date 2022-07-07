@@ -82,10 +82,10 @@
     </header>
 
 
-    <main class="container">
+    <main>
 
         <!--СЛАЙДЕР-->
-        <div class="advertising">
+        <div class="advertising container">
 
 
           <!--Сетка под блоки-->
@@ -209,7 +209,7 @@
 
 
         <!--БЛОК КАТЕГОРИИ-->
-        <div class="category">
+        <div class="category container">
           <ul class="category-list">
             <li class="category-item category-item-virtual">
               <a class="underline-remove category-item-description" href="#">Виртуальная реальность</a>
@@ -233,64 +233,75 @@
         </div>
 
         <!--УСЛОВИЯ Доставки, Гараний, Кредита-->
-        <section class="terms">
-          <ul class="terms-list-title">
-            <li class="interactive-button"><a class="underline-remove terms-item-title-sub" href="#"><h3>Доставка</h3></a></li>
-            <li class="interactive-button terms-item-bg"><a class="underline-remove terms-item-title-sub" href="#"><h3>Гаранития</h3></a></li>
-            <li class="interactive-button terms-item-bg"><a class="underline-remove terms-item-title-sub" href="#"><h3>Кредит</h3></a></li>
-          </ul>
 
+        <section class="terms container">
+          <div class="terms-right-block">
+            <ul class="terms-title-list">
+              <li class="terms-item-title">
+                <a class="interactive-button underline-remove terms-item-title-sub terms-text-decor" href="#">Доставка</a>
+              </li>
+              <li class="terms-item-title">
+                <a class="interactive-button underline-remove terms-item-title-sub" href="#">Гаранития</a>
+              </li>
+              <li class="terms-item-title">
+                <a class="interactive-button underline-remove terms-item-title-sub" href="#">Кредит</a>
+              </li>
+            </ul>
+            <span class="terms-decor-line"></span>
+          </div>
           <!--Декоративная линия-->
-          <span class="terms-decor-line"></span>
+
 
           <!--УСЛОВИЯ-->
           <ul class="terms-list">
 
             <!--УСЛОВИЯ Доставки-->
             <li class="terms-item">
-              <div>
+              <div class="terms-item-list">
                 <h2 class="main-title">Доставка</h2>
-                <p class="text">Мы с удовольствием доставим ваш товар прямо
+                <p class="text terms-item-descrip">Мы с удовольствием доставим ваш товар прямо
                   к вашему подъезду совершенно бесплатно! Ведь
                   мы неплохо заработаем, поднимая его на ваш этаж.</p>
               </div>
-              <img src="src/images/run_man.svg" width="136" height="164" alt="">
+              <span class="terms-image"></span>
             </li>
 
             <!--УСЛОВИЯ Гарантии-->
             <li class="terms-item">
-              <div>
+              <div class="terms-item-list">
                 <h2 class="main-title">Гарантия</h2>
-                <p class="text">Если из-за возгорания купленного у нас товара у вас
+                <p class="text terms-item-descrip">Если из-за возгорания купленного у нас товара у вас
                   сгорит дом — не переживайте, мы выдадим вам новый.
                   Товар, не дом, конечно же.</p>
               </div>
-              <img src="src/images/guarantee.svg" width="136" height="164" alt="">
+              <span class="terms-image"></span>
             </li>
 
             <!--УСЛОВИЯ Кредита-->
             <li class="terms-item">
-              <div>
+              <div class="terms-item-list">
                 <h2 class="main-title">Кредит</h2>
-                <p class="text">Залезть в долговую яму стало проще! Кредитные
+                <p class="text terms-item-descrip">Залезть в долговую яму стало проще! Кредитные
                   консультанты подберут для вас наиболее выгодные
                   условия кредита. Выгодные для банка, разумеется.</p>
               </div>
-              <img src="src/images/credit.svg" width="136" height="164" alt="">
+              <span class="terms-image"></span>
             </li>
           </ul>
         </section>
 
+        <div class="terms-background"></div>
+
 
         <!--ОТДЕЛ ОФОРМЛЕНИЯ И ИНОФРМАЦИИ ПО ДОСТАВКЕ-->
-        <div class="delivery-info">
+        <div class="delivery-info  container">
           <span class="delivery-img-car"></span>
           <p class="delivery-text">Доставим редкий товар под заказ</p>
           <span class="delivery-img-info"></span>
         </div>
 
         <!--МОДАЛЬНОЕ ОКНО ДОСТАВКИ-->
-        <section class="delivery-modal">
+        <section class="delivery-modal  container">
           <form>
             <h2 class="main-title">Доставка под заказ</h2>
             <span>
@@ -317,7 +328,7 @@
         </section>
 
 
-        <section class="about">
+        <section class="about  container">
           <div class="about-main">
             <h2 class="main-title about-title">О нас</h2>
             <p class="text">
@@ -349,7 +360,7 @@
           </div>
         </section>
 
-        <section class="mailing-list">
+        <section class="mailing-list container">
           <div class="mailing-item">
             <h2 class="main-title">Подпишитесь на рассылку</h2>
             <p class="text mailing-item-description">
