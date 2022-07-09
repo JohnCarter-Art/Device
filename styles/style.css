@@ -76,6 +76,11 @@ body {
     padding-inline-start: 0px;
 }
 
+.partner-list {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
 .partner-item::marker {
     color: #FFC700;
 }
@@ -138,6 +143,11 @@ body {
     font-size: 24px;
     line-height: 30px;
     color: var(--main-color);
+
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 .text-bold {
@@ -158,6 +168,13 @@ body {
     font-size: 16px;
     line-height: 20px;
     color: var(--main-color);
+}
+
+.text-small-desc::placeholder {
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--main-color);
+    opacity: 0.3;
 }
 
 .des-term {
@@ -897,7 +914,54 @@ input.search-text-area::placeholder {color: var(--main-color);}
 /*MODAL DELIVERY*/
 .delivery-modal {
     display: none;
+
+    border: 10px solid #000000;
+    box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.1);
+
+    padding: 72px 80px;
+
+    width: auto;
+    height: auto;
+
+    background-color: var(--white-color);
 }
+
+.delivery-modal-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 42px;
+}
+
+.delivery-modal-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 40px;
+
+    width: 760px;
+}
+
+.delivery-modal-input {
+    display: flex;
+    flex-direction: column;
+
+    gap: 14px;
+}
+
+.exit-icon {
+    display: flex;
+
+    background-image: url("../src/images/exit.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    width: 26px;
+    height: 26px;
+}
+
 
 
 /*О нас и контакты*/
@@ -907,11 +971,18 @@ input.search-text-area::placeholder {color: var(--main-color);}
 
     width: 1160px;
     height: 545px;
+
     display: flex;
 }
 
 .about-main:nth-child(1) {
     margin-right: 131px;
+}
+
+.about-main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 /*Рассылка*/
