@@ -343,9 +343,24 @@
               Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:
             </p>
             <ul class="partner-list text-bold">
-              <li class="partner-item"><a class="underline-remove" href="#">Меловые линии</a></li>
-              <li class="partner-item"><a class="underline-remove" href="#">СДИК</a></li>
-              <li class="partner-item"><a class="underline-remove" href="#">ТоксБерри</a></li>
+              <li class="partner-item">
+                <a class="underline-remove" href="#">
+                  <span class="partner-ellipse"></span>
+                  <span>Меловые линии</span>
+                </a>
+              </li>
+              <li class="partner-item">
+                <a class="underline-remove" href="#">
+                  <span class="partner-ellipse"></span>
+                  <span>СДИК</span>
+                </a>
+              </li>
+              <li class="partner-item">
+                <a class="underline-remove" href="#">
+                  <span class="partner-ellipse"></span>
+                  <span>ТоксБерри</span>
+                </a>
+              </li>
             </ul>
             <div class="about-button">
               <a class="underline-remove interactive-button" href="#">Подробнее о нас</a>
@@ -372,63 +387,70 @@
           </div>
         </section>
 
-        <section class="mailing-list container">
-          <div class="mailing-item">
-            <h2 class="main-title">Подпишитесь на рассылку</h2>
-            <p class="text mailing-item-description">
-              Еженедельный дайджест с обзорами новинок,
-              длительными тест-драйвами, распаковками, а также акции,
-              спецпредложения и вот это вот всё.
-            </p>
-          </div>
-          <div class="mailing-item">
-            <form action="https://echo.htmlacademy.ru">
-              <input type="email" name="email" placeholder="Ваш e-mail" size="60">
-              <input type="submit" value="Подписаться"  class="interactive-button">
-            </form>
-            <p class="text">Это бесплатно</p>
+
+        <section class="mailing">
+          <div class="mailing-bg"></div>
+          <div class="container mailing-list">
+            <div class="mailing-item">
+              <h2 class="main-title">Подпишитесь на рассылку</h2>
+              <p class="text mailing-item-description">
+                Еженедельный дайджест с обзорами новинок,
+                длительными тест-драйвами, распаковками, а также акции,
+                спецпредложения и вот это вот всё.
+              </p>
+            </div>
+            <div class="mailing-item">
+              <form class="mailing-form-sub" action="https://echo.htmlacademy.ru">
+                <input class="mailing-input-space" type="email" name="email" placeholder="Ваш e-mail">
+                <input class="mailing-input-sub interactive-button" type="submit" value="Подписаться">
+              </form>
+            <span class="mailing-free">
+              <span class="mailing-icon"></span>
+              <p class="text">Это бесплатно</p>
+            </span>
+
+            </div>
           </div>
         </section>
 
     </main>
 
     <!--Подвал-->
-    <footer class="footer">
-      <div class="container footer-column">
-        <div class="footer-col-1">
-          <a class="underline-remove logo-footer">
+    <footer class="footer footer-text">
+      <div class="container">
+        <div class="footer-column">
+          <a class="underline-remove logo-footer footer-col-1 footer-row-1">
             <img src="src/images/logo_footer.svg" width="145" height="36" alt="Интернет магазин Девайс">
           </a>
-          <p class="text-small-desc footer-col-1-descrition">
-            Санкт-Петербург, набережная
-            реки Карповки, 5, литера П.
+          <p class="text-small-desc footer-col-1-descrition footer-col-1 footer-row-2">
+            Санкт-Петербург, набережная реки Карповки, 5, литера П.
           </p>
-        </div>
-        <div class="footer-col-2">
-          <div class="">
-            <a class="underline-remove title-subtitle" href="#">Доставка</a>
-            <a class="underline-remove title-subtitle" href="#">Гарантия</a>
-            <a class="underline-remove title-subtitle" href="#">Контакты</a>
+          <span class="footer-decor-line footer-col-1 footer-row-3"></span>
+
+
+          <div class="footer-col-2 footer-row-2">
+            <a class="underline-remove title-subtitle footer-text" href="#">Доставка</a>
+            <a class="underline-remove title-subtitle footer-text" href="#">Гарантия</a>
+            <a class="underline-remove title-subtitle footer-text" href="#">Контакты</a>
           </div>
-          <ul class="social-networks-list">
+          <ul class="social-networks-list footer-col-2 footer-row-3">
             <li class="social-networks-item">
-              <a class="underline-remove icon" href="https://t.me/htmlacademy">Telegram</a>
+              <a class="underline-remove" href="https://t.me/htmlacademy"></a>
             </li>
             <li class="social-networks-item">
-              <a class="underline-remove icon" href="https://www.youtube.com/user/htmlacademyru">Youtube</a>
+              <a class="underline-remove" href="https://www.youtube.com/user/htmlacademyru"></a>
             </li>
             <li class="social-networks-item">
-              <a class="underline-remove icon" href="https://twitter.com/htmlacademy_ru">Twitter</a>
+              <a class="underline-remove" href="https://twitter.com/htmlacademy_ru"></a>
             </li>
           </ul>
-        </div>
-        <div class="footer-col-3">
-          <a class="underline-remove link" href="tel:+78128121212">+7 (812) 812-12-12</a>
-          <a class="underline-remove" href="https://htmlacademy.ru/">
+
+          <a class="footer-col-3 footer-row-2 footer-text footer-link-tel" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <a class="underline-remove footer-col-3 footer-row-3" href="https://htmlacademy.ru/">
             <img src="src/images/html_academy.svg" alt="html academy">
           </a>
         </div>
-    </div>
+      </div>
     </footer>
 
   </body>
